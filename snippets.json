@@ -1,0 +1,111 @@
+// Arduino Snippets
+"Arduino skeleton": {
+    "prefix": [
+		"arduino",
+		"setuploop"
+	],
+    "body": [
+        "void setup()",
+        "{",
+        "\t${1:/*setup code*/}",
+        "}",
+        "",
+        "void loop()",
+        "{",
+        "\t${2:/*looping code*/}$0",
+        "}"
+    ],
+    "description": "Insert setup and loop"
+},
+"Arduino loop": {
+    "prefix": "loop",
+    "body": [
+        "void loop()",
+        "{",
+        "\t${1:/*looping code*/}$0",
+        "}"
+    ],
+    "description": "Insert loop"
+},
+"Arduino setup": {
+    "prefix": "setup",
+    "body": [
+        "void setup()",
+        "{",
+        "\t${1:/*setup code*/}$0",
+        "}"
+    ],
+    "description": "Insert setup"
+},
+"Arduino Serial.begin": {
+	"prefix": [
+		"serialbegin",
+		"sbeg"
+	],
+	"body": "Serial.begin(${1|300,600,1200,2400,4800,9600,14400,19200,28800,38400,57600,115200,custom|});$0",
+	"description": "Insert Serial.begin"
+},
+"Arduino Serial.begin with config": {
+	"prefix": [
+		"serialbegin",
+		"sbeg"
+	],
+	"body": "Serial.begin(${1|300,600,1200,2400,4800,9600,14400,19200,28800,38400,57600,115200,custom|}, ${2|SERIAL_5N1,SERIAL_6N1,SERIAL_7N1,SERIAL_8N1,SERIAL_5N2,SERIAL_6N2,SERIAL_7N2,SERIAL_8N2,SERIAL_5E1,SERIAL_6E1,SERIAL_7E1,SERIAL_8E1,SERIAL_5E2,SERIAL_6E2,SERIAL_7E2,SERIAL_8E2,SERIAL_5O1,SERIAL_6O1,SERIAL_7O1,SERIAL_8O1,SERIAL_5O2,SERIAL_6O2,SERIAL_7O2,SERIAL_8O2|});$0",
+	"description": "Insert Serial.begin with config"
+},
+"Arduino Serial.print": {
+    "prefix": [
+		"serialprint",
+		"sprint",
+		"print"	
+	],
+    "body": "Serial.print(${1:/*val*/});$0",
+    "description": "Insert Serial.print"
+},
+"Arduino formatted Serial.print": {
+    "prefix": [
+		"serialprint",
+		"sprint",
+		"print"	
+	],
+    "body": "Serial.print(${1:/*val*/}, ${2|BIN,OCT,HEX,DEC,decimals|});$0",
+    "description": "Insert formatted Serial.print"
+},
+"Arduino Serial.println": {
+    "prefix": [
+		"serialprintln",
+		"sprintln",
+		"println"	
+	],
+    "body": "Serial.println(${1:/*val*/});$0",
+    "description": "Insert Serial.println"
+},
+"Arduino formatted Serial.println": {
+    "prefix": [
+		"serialprintln",
+		"sprintln",
+		"println"	
+	],
+    "body": "Serial.println(${1:/*val*/}, ${2|BIN,OCT,HEX,DEC,decimals|});$0",
+    "description": "Insert formatted Serial.println"
+},
+"Arduino pinMode": {
+	"prefix": "pinmode",
+	"body": "pinMode(${1:/*pin*/}, ${2|INPUT,OUTPUT|});$0",
+	"description": "Insert pinMode"
+},
+"Arduino digitalWrite": {
+    "prefix": "digitalwrite",
+    "body": "digitalWrite(${1:/*pin*/, ${2:/*value*/});$0",
+    "description": "Insert digitalWrite"
+},
+"Arduino digitalRead": {
+    "prefix": "digitalread",
+    "body": "digitalRead(${1:/*pin*/);$0",
+    "description": "Insert digitalRead"
+},
+"Arduino analogRead": {
+    "prefix": "analogread",
+    "body": "analogRead(${1:/*pin*/, ${2:/*value*/});$0",
+    "description": "Insert analogRead"
+}
