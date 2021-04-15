@@ -1,4 +1,4 @@
-# vscode arduino snippets
+# VS Code Arduino Snippets
 My custom made VSCode snippets for the Arduino extension.
 
 ## Installation
