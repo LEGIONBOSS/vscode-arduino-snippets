@@ -90,22 +90,47 @@
     "description": "Insert formatted Serial.println"
 },
 "Arduino pinMode": {
-	"prefix": "pinmode",
+	"prefix": [
+        "pinmode",
+        "pm"
+    ],
 	"body": "pinMode(${1:/*pin*/}, ${2|INPUT,OUTPUT|});$0",
 	"description": "Insert pinMode"
 },
 "Arduino digitalWrite": {
-    "prefix": "digitalwrite",
-    "body": "digitalWrite(${1:/*pin*/, ${2:/*value*/});$0",
+    "prefix": [
+        "digitalwrite",
+        "dw"
+    ],
+    "body": "digitalWrite(${1:/*pin*/}, ${2:/*value*/});$0",
     "description": "Insert digitalWrite"
 },
 "Arduino digitalRead": {
-    "prefix": "digitalread",
-    "body": "digitalRead(${1:/*pin*/);$0",
+    "prefix": [
+        "digitalread",
+        "dr"
+    ],
+    "body": "digitalRead(${1:/*pin*/});$0",
     "description": "Insert digitalRead"
 },
+"Arduino analogWrite": {
+    "prefix": [
+        "analogwrite",
+        "aw"
+    ],
+    "body": "analogRead(${1:/*pin*/}, ${2:/*value*/});$0",
+    "description": "Insert analogWrite"
+},
 "Arduino analogRead": {
-    "prefix": "analogread",
-    "body": "analogRead(${1:/*pin*/, ${2:/*value*/});$0",
+    "prefix": [
+        "analogread",
+        "ar"
+    ],
+    "body": "analogRead(${1:/*pin*/});$0",
     "description": "Insert analogRead"
+},
+"Arduino delay": {
+    "prefix": "delay",
+    "body": "delay(${1:/*ms*/});$0",
+    "description": "Insert delay"
 }
