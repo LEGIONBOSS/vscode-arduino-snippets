@@ -133,4 +133,9 @@
     "prefix": "delay",
     "body": "delay(${1:/*ms*/});$0",
     "description": "Insert delay"
+},
+"Arduino map": {
+    "prefix": "map",
+    "body": "map(${1:/*value*/}, ${2:/*fromLow*/}, ${3:/*fromHigh*/}, ${4:/*toLow*/}, ${5:/*toHigh*/});$0",
+    "description": "Insert map"
 }
