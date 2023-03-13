@@ -132,7 +132,7 @@
         "sprintf",
         "printf"
     ],
-    "body": "Serial.printf(\"${1|%i,%f,%c,%s|}\", ${2:/*value*/});$0",
+    "body": "Serial.printf(\"${1|%i,%f,%c,%s|}\\n\", ${2:/*value*/});$0",
     "description": "Insert Serial.printf"
 },
 "Arduino pinMode": {
