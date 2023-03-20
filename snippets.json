@@ -149,7 +149,7 @@
         "pinmode",
         "pm"
     ],
-	"body": "pinMode(${1:/*pin*/}, ${2|INPUT,OUTPUT|});$0",
+	"body": "pinMode(${1:/*pin*/}, ${2|INPUT,INPUT_PULLUP,INPUT_PULLDOWN,OUTPUT|});$0",
 	"description": "Insert pinMode"
 },
 "Arduino digitalWrite": {
