@@ -72,6 +72,24 @@
     ],
     "description": "Insert setup"
 },
+"Arduino header skeleton": {
+    "prefix": [
+        "header",
+        "headerskel",
+        "headerskeleton",
+        "ifndef",
+        "#ifndef"
+    ],
+    "body": [
+        "#ifndef ${1:/*NAME*/}_H",
+        "#define ${1:/*NAME*/}_H",
+        "",
+        "${2:/*Header content*/}$0",
+        "",
+        "#endif // ${1:/*NAME*/}_H"
+    ],
+    "description": "Insert header skeleton"
+},
 "Arduino Serial.begin": {
 	"prefix": [
 		"serialbegin",
