@@ -84,7 +84,7 @@
         "#ifndef ${1:/*NAME*/}_H",
         "#define ${1:/*NAME*/}_H",
         "",
-        "${2:/*Header content*/}$0",
+        "${2:/*header code*/}$0",
         "",
         "#endif // ${1:/*NAME*/}_H"
     ],
